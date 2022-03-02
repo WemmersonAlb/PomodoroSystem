@@ -63,7 +63,7 @@ int gerenciadorDoSistema (){
     printf("\n 0. Sair\n\n");
     fflush(stdin);/*Limpa o buff do teclado*/
     verificador = scanf(" %d", &gerenciador);/*Se o usuário digitar algo que esteja fora das opções, é convidado a redigitar a opção*/
-    while(verificador == 0&&(0<gerenciador||gerenciador>4)){/*Serve para repetir o q se pede até o usuário digitar o que é pedido */
+    while(verificador == 0){/*Serve para repetir o q se pede até o usuário digitar o que é pedido */
                                 system("clear||cls");
                                 printf("\n\n\n\nDigite uma opção válida:");
                                 printf("\n 1. Bloco de estudos - 25 minutos");
@@ -91,7 +91,7 @@ int main(){
     printf("\n 0. Sair\n\n");
     fflush(stdin);
     verificador = scanf(" %d", &gerenciador);/*igual a função*/
-    while(verificador == 0&&(0<gerenciador||gerenciador>4)){
+    while(verificador ==0){
         system("clear||cls");
         printf("\n\n\n\nDigite uma opção válida:");
         printf("\n 1. Bloco de estudos - 25 minutos");
@@ -107,6 +107,7 @@ int main(){
                             system("clear||cls");
                             contadorDeTempo(1501);
                             gerenciador = gerenciadorDoSistema();
+                            break;
                     case 2:
                             system("clear||cls");
                             contadorDeTempo(301);
@@ -122,13 +123,14 @@ int main(){
                             break;
                     default:
                         system("clear||cls");
-                        printf("ERROR");
+                        printf("\n\n\n\nDigite uma opção válida:");
                         gerenciador = gerenciadorDoSistema();
                         break;
             }
     }while(gerenciador!=0);
     printf("\n\n\nObrigado por usar o Pomodoro System!!!");
-    printf("\nEsse código está liberado para reprodução e melhoramento APENAS para fins educacionais.");
+    printf("\nEsse código está liberado para reprodução e melhoramento APENAS");
+    printf("\npara uso pessoal e educacional.");
     printf("\nA comercialização é PROIBIDA.");
     printf("\nAutor: Wemmerson Albuquerque.");
     printf("\nContato: wemmerson.albuquerque@gmail.com\n\n");
