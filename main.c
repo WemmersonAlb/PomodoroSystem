@@ -5,8 +5,7 @@
 #include <locale.h>
 #include <time.h>
 
-int main(){
-
+void contadorDeTempo(int x){
     /*-----------------VARIÁVEIS----------------*/
 
     time_t totalSegundos;/*cria variavel que resgata o valor de tempo*/
@@ -18,139 +17,6 @@ int main(){
     s, /*imprime os segundos*/
     pomodoroS, /*serve para sabermos onde a contagem começou*/
     i;/*serve para repetir o alarme*/
-    setlocale (LC_ALL, "Portuguese_Brazil");    /*deixa os textos compatíveis com a língua portuguesa*/
-    int gerenciador, verificador; /*gerencia o switch e verifica se o dado informado é uma oção válida*/
-
-    /*--------------Apresentação do Pomodoro---------------*/
-
-    printf("\n\n\n\nBem-vinde ao POMODORO SYSTEM\n\nSelecione o que você deseja:");
-    printf("\n 1. Bloco de estudos - 25 minutos");
-    printf("\n 2. Pausa curta         - 5   minutos");
-    printf("\n 3. Pausa longa         - 30 minutos");
-    printf("\n 0. Sair");
-    fflush(stdin);
-    verificador = scanf(" %d", &gerenciador);
-    while(verificador == 0&&(0<=gerenciador<4)){
-        system("clear||cls");
-        printf("\n\n\n\nDigite uma opção válida:");
-        printf("\n 1. Bloco de estudos - 25 minutos");
-        printf("\n 2. Pausa curta         - 5   minutos");
-        printf("\n 3. Pausa longa         - 30 minutos");
-        printf("\n 0. Sair");
-        fflush(stdin);
-        verificador = scanf(" %d", &gerenciador);
-    }
-    do{
-            switch (gerenciador){
-                    case 1:
-                            system("clear||cls");
-
-
-
-
-                            printf("\n\n\nTerminou a contagem!!!");
-
-                            printf("\n\n\nSelecione o que você deseja:");
-                            printf("\n 1. Bloco de estudos - 25 minutos");
-                            printf("\n 2. Pausa curta         - 5   minutos");
-                            printf("\n 3. Pausa longa         - 30 minutos");
-                            printf("\n 0. Sair");
-                            fflush(stdin);
-                            verificador = scanf(" %d", &gerenciador);
-                            while(verificador == 0&&(0<=gerenciador<4)){
-                                system("clear||cls");
-                                printf("\n\n\n\nDigite uma opção válida:");
-                                printf("\n 1. Bloco de estudos - 25 minutos");
-                                printf("\n 2. Pausa curta         - 5   minutos");
-                                printf("\n 3. Pausa longa         - 30 minutos");
-                                printf("\n 0. Sair");
-                                fflush(stdin);
-                                verificador = scanf(" %d", &gerenciador);
-                            }
-                            break;
-                    case 2:
-                            system("clear||cls");
-
-
-
-
-                            printf("\n\n\nTerminou a contagem!!!");
-
-                            printf("\n\n\nSelecione o que você deseja:");
-                            printf("\n 1. Bloco de estudos - 25 minutos");
-                            printf("\n 2. Pausa curta         - 5   minutos");
-                            printf("\n 3. Pausa longa         - 30 minutos");
-                            printf("\n 0. Sair");
-                            fflush(stdin);
-                            verificador = scanf(" %d", &gerenciador);
-                            while(verificador == 0&&(0<=gerenciador<4)){
-                                system("clear||cls");
-                                printf("\n\n\n\nDigite uma opção válida:");
-                                printf("\n 1. Bloco de estudos - 25 minutos");
-                                printf("\n 2. Pausa curta         - 5   minutos");
-                                printf("\n 3. Pausa longa         - 30 minutos");
-                                printf("\n 0. Sair");
-                                fflush(stdin);
-                                verificador = scanf(" %d", &gerenciador);
-                            }
-                            break;
-                    case 3:
-                            system("clear||cls");
-
-
-
-
-                            printf("\n\n\nTerminou a contagem!!!");
-
-                            printf("\n\n\nSelecione o que você deseja:");
-                            printf("\n 1. Bloco de estudos - 25 minutos");
-                            printf("\n 2. Pausa curta         - 5   minutos");
-                            printf("\n 3. Pausa longa         - 30 minutos");
-                            printf("\n 0. Sair");
-                            fflush(stdin);
-                            verificador = scanf(" %d", &gerenciador);
-                            while(verificador == 0&&(0<=gerenciador<4)){
-                                system("clear||cls");
-                                printf("\n\n\n\nDigite uma opção válida:");
-                                printf("\n 1. Bloco de estudos - 25 minutos");
-                                printf("\n 2. Pausa curta         - 5   minutos");
-                                printf("\n 3. Pausa longa         - 30 minutos");
-                                printf("\n 0. Sair");
-                                fflush(stdin);
-                                verificador = scanf(" %d", &gerenciador);
-                            }
-                            break;
-                    case 0:
-                            gerenciador = 0;
-                            break;
-                    default:
-                        system("clear||cls");
-                        printf("ERRO - selecione uma opção válida!!!");
-                        printf("\n 1. Bloco de estudos - 25 minutos");
-                        printf("\n 2. Pausa curta         - 5   minutos");
-                        printf("\n 3. Pausa longa         - 30 minutos");
-                        printf("\n 0. Sair");
-                        fflush(stdin);
-                        verificador = scanf(" %d", &gerenciador);
-                        while(verificador == 0&&(0<=gerenciador<4)){
-                            system("clear||cls");
-                            printf("\n\n\n\nDigite uma opção válida:");
-                            printf("\n 1. Bloco de estudos - 25 minutos");
-                            printf("\n 2. Pausa curta         - 5   minutos");
-                            printf("\n 3. Pausa longa         - 30 minutos");
-                            printf("\n 0. Sair");
-                            fflush(stdin);
-                            verificador = scanf(" %d", &gerenciador);
-                        }
-                        break;
-            }
-    }while(gerenciador!=0);
-
-    printf("\n\n\nObrigado por usar o Pomodoro System!!!");
-    printf("\nEsse código está liberado para reprodução e melhoramento APENAS para fins educacionais.");
-    printf("\nA comercialização é PROIBIDA.");
-    printf("\nAutor: Wemmerson Albuquerque.");
-    printf("\nContato: wemmerson.albuquerque@gmail.com");
 
     /*-------------------PREPARAÇÃO-------------------*/
 
@@ -166,7 +32,7 @@ int main(){
 
     /*----------ALGORÍTMO DE PASSAGEM DO TEMPO-----------*/
 
-    while (diferenca<10){/*colocar no lugar do 120 a quantidade de segundos que deseja que o contador termine a contagem*/
+    while (diferenca<x){/*colocar no lugar do 120 a quantidade de segundos que deseja que o contador termine a contagem*/
         if(atualS==anteriorS){/*faz de fato a detecção da passagem de tempo de forma a não poluir o console*/
             totalSegundos = time(NULL);
             segundo = totalSegundos;
@@ -180,10 +46,93 @@ int main(){
             anteriorS = atualS;/*atualiza nosso filtro de passagem do tempo*/
         }
     }
-    for(i=0;i<2;i++){
-        PlaySound(TEXT("SHAKEN_B.wav"), NULL, SND_SYNC);
+    for(i=0;i<2;i++){/*repeti o arquivo de áudio por ser curto*/
+        PlaySound(TEXT("SHAKEN_B.wav"), NULL, SND_SYNC);/*toca o áudio selecionado para marcar o fim da contagem*/
      }
     printf("\n\nTerminou a contagem!\n\n");
+    return;
+}
+
+int gerenciadorDoSistema (){
+    int gerenciador, verificador;
+
+    printf("\n\n\nSelecione o que você deseja:");
+    printf("\n 1. Bloco de estudos - 25 minutos");
+    printf("\n 2. Pausa curta         - 5   minutos");
+    printf("\n 3. Pausa longa         - 30 minutos");
+    printf("\n 0. Sair\n\n");
+    fflush(stdin);/*Limpa o buff do teclado*/
+    verificador = scanf(" %d", &gerenciador);/*Se o usuário digitar algo que esteja fora das opções, é convidado a redigitar a opção*/
+    while(verificador == 0&&(0<gerenciador||gerenciador>4)){/*Serve para repetir o q se pede até o usuário digitar o que é pedido */
+                                system("clear||cls");
+                                printf("\n\n\n\nDigite uma opção válida:");
+                                printf("\n 1. Bloco de estudos - 25 minutos");
+                                printf("\n 2. Pausa curta         - 5   minutos");
+                                printf("\n 3. Pausa longa         - 30 minutos");
+                                printf("\n 0. Sair\n\n");
+                                fflush(stdin);
+                                verificador = scanf(" %d", &gerenciador);
+    }
+    return gerenciador; /*retorna um número inteiro que dita qual opção do sistema o usuário optou*/
+}
+int main(){
+
+    /*-----------------VARIÁVEIS do gerenciamento do pomodoro system----------------*/
+
+    int gerenciador, verificador; /*gerencia o switch e verifica se o dado informado é uma oção válida*/
+    setlocale (LC_ALL, "Portuguese_Brazil");    /*deixa os textos compatíveis com a língua portuguesa*/
+
+    /*--------------Apresentação do Pomodoro---------------*/
+
+    printf("\n\n\n\nBem-vinde ao POMODORO SYSTEM\n\nSelecione o que você deseja:");
+    printf("\n 1. Bloco de estudos - 25 minutos");
+    printf("\n 2. Pausa curta         - 5   minutos");
+    printf("\n 3. Pausa longa         - 30 minutos");
+    printf("\n 0. Sair\n\n");
+    fflush(stdin);
+    verificador = scanf(" %d", &gerenciador);/*igual a função*/
+    while(verificador == 0&&(0<gerenciador||gerenciador>4)){
+        system("clear||cls");
+        printf("\n\n\n\nDigite uma opção válida:");
+        printf("\n 1. Bloco de estudos - 25 minutos");
+        printf("\n 2. Pausa curta         - 5   minutos");
+        printf("\n 3. Pausa longa         - 30 minutos");
+        printf("\n 0. Sair\n\n");
+        fflush(stdin);
+        verificador = scanf(" %d", &gerenciador);
+    }
+    do{
+            switch (gerenciador){
+                    case 1:
+                            system("clear||cls");
+                            contadorDeTempo(1501);
+                            gerenciador = gerenciadorDoSistema();
+                    case 2:
+                            system("clear||cls");
+                            contadorDeTempo(301);
+                            gerenciador = gerenciadorDoSistema();
+                            break;
+                    case 3:
+                            system("clear||cls");
+                            contadorDeTempo(1801);
+                            gerenciador = gerenciadorDoSistema();
+                            break;
+                    case 0:
+                            gerenciador = 0;
+                            break;
+                    default:
+                        system("clear||cls");
+                        printf("ERROR");
+                        gerenciador = gerenciadorDoSistema();
+                        break;
+            }
+    }while(gerenciador!=0);
+    printf("\n\n\nObrigado por usar o Pomodoro System!!!");
+    printf("\nEsse código está liberado para reprodução e melhoramento APENAS para fins educacionais.");
+    printf("\nA comercialização é PROIBIDA.");
+    printf("\nAutor: Wemmerson Albuquerque.");
+    printf("\nContato: wemmerson.albuquerque@gmail.com");
+
     system("pause");
     return 0;
 
