@@ -131,7 +131,7 @@ int main(){
     printf("\nEsse código está liberado para reprodução e melhoramento APENAS para fins educacionais.");
     printf("\nA comercialização é PROIBIDA.");
     printf("\nAutor: Wemmerson Albuquerque.");
-    printf("\nContato: wemmerson.albuquerque@gmail.com");
+    printf("\nContato: wemmerson.albuquerque@gmail.com\n\n");
 
     system("pause");
     return 0;
