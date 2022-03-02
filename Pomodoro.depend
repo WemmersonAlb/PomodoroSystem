@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1646227204 source:c:\users\wemmerson\documents\estudando\pomodoro\main.c
+	<windows.h>
+	<mmsystem.h>
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	<time.h>
+
